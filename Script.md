@@ -18,6 +18,10 @@
 
 - `%time` -- assess speed
 - `%run`  -- debug
+- `%autoreload 2`  -- keep autoreloading packages
+
+    %load_ext autoreload           # load the package
+    %autoreload 2
 
 ## Keeping the system clean and tidy: 
 
