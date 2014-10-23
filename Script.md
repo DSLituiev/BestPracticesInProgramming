@@ -146,11 +146,12 @@ Make a local installation of the package with developer mode
 within the `setup.py`:
 
 	from setuptools import setup, find_packages
-	
-	version = "0.0.1"
+
+	VERSION = (0, 0, 1)
+	# VERSION = "0.0.1"
 	
 	setup(name="name_to_call",
-	    version=version,
+	    version=VERSION,
 	    maintainer="My Name",
 	    maintainer_email="my@email.com",
 	    license="http://opensource.org/licenses/BSD-3-Clause",
