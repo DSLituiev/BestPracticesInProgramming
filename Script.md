@@ -122,6 +122,12 @@ The *model* should be implemented separately from other parts. This ensures test
 
 The *controller* is usually integrated with the *view*. If very complex, can be represented by a hash table (dictionary). 
 
+## git
+
+make an alias for a nicer log tree:
+
+    git config --global alias.tree "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    git tree
 # Workflow
 
 Start a new `virtualenv` session
