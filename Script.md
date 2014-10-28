@@ -130,6 +130,7 @@ make an alias for a nicer log tree:
     git tree
     
 to update cached files after modifying `.gitignore`:
+
     git rm -r --cached .
     git add .
     
