@@ -128,6 +128,11 @@ make an alias for a nicer log tree:
 
     git config --global alias.tree "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     git tree
+    
+to update cached files after modifying `.gitignore`:
+    git rm -r --cached .
+    git add .
+    
 # Workflow
 
 Start a new `virtualenv` session
