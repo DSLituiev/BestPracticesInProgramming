@@ -134,6 +134,10 @@ to update cached files after modifying `.gitignore`:
     git rm -r --cached .
     git add .
 
+or, specifically for the files in `.gitignore`:
+
+    for file in `cat .gitignore`  ; do git rm -r --cached $file; done
+
 rename a branch (e.g. `master` to `new_branch`)
 
     git branch -m master new_branch
