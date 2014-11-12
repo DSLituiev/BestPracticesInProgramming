@@ -44,7 +44,9 @@ Allows to have a separate Python installation with a separate set of packages.
 
         $ source Scripts/activate 
         (jobname)  $_             # within the virtual environment 'jobname' now
-    
+
+- configure for scientific computing
+ - on [Windows](http://texploring.com/installing-scikit-learn-in-python-virtualenv-to-do-general-purpose-machine-learning/)
 
 ### `docker`
 
