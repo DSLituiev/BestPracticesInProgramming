@@ -144,6 +144,17 @@ rename a branch (e.g. `master` to `new_branch`)
 
     git branch -m master new_branch
 
+if after pulling from a remote repository the HEAD detaches
+
+    git checkout origin/master
+    git branch -D master
+    git branch master
+    
+or
+
+    git checkout master
+    # Reset master back to origin/master
+    git reset --hard origin/master
     
 # Workflow
 
