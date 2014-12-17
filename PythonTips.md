@@ -94,51 +94,5 @@ Do not mix up errors with output values (e.g. old style `-1` for invalid input)
 		raise ValueError
 	finally:
 		f.close()
-  	
-## GUI design
-
-Think of a GUI as a [state machine](http://en.wikipedia.org/wiki/Finite-state_machine). 
-See also [Model-view-controller model](http://en.wikipedia.org/wiki/Model-view-controller)
-
-- internal states 
-	- **model**: does computations that change the internal state
-	- **view** : GUI state
-- external inputs (user input, via 'view')
-- **controller**: a transition function (aka synchronisation):
-
-The *model* should be implemented separately from other parts. This ensures testability.
-
-The *controller* is usually integrated with the *view*. If very complex, can be represented by a hash table (dictionary). 
-
-## git
-
-make an alias for a nicer log tree:
-
-    git config --global alias.tree "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-    git tree
-    
-to update cached files after modifying `.gitignore`:
-
-    git rm -r --cached .
-    git add .
-
-or, specifically for the files in `.gitignore`:
-
-    for file in `cat .gitignore`  ; do git rm -r --cached $file; done
-
-rename a branch (e.g. `master` to `new_branch`)
-
-    git branch -m master new_branch
-
-if after pulling from a remote repository the HEAD detaches
-
-    git checkout origin/master
-    git branch -D master
-    git branch master
-    
-or
-
-    git checkout master
-    # Reset master back to origin/master
-    git reset --hard origin/master
+ 
 
