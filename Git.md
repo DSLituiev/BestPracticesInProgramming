@@ -30,3 +30,11 @@ or
     # Reset master back to origin/master
     git reset --hard origin/master
 
+## Adding an external module
+
+    git submodule add git://github.com/someuser/repo.git lib/repo
+
+This will create a directory named `lib/repo` and link it to the github `repo` repository. Now, initialize the submodule and clone the code to it:
+
+    git submodule update --init --recursive
+
