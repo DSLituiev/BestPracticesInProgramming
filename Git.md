@@ -38,3 +38,7 @@ This will create a directory named `lib/repo` and link it to the github `repo` r
 
     git submodule update --init --recursive
 
+## Restoring a file deleted in an earlier commit
+
+    file="an_earlier_deleted_file_i_want_to_restore.txt"
+    git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file"
