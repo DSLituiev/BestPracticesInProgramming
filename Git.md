@@ -42,3 +42,9 @@ This will create a directory named `lib/repo` and link it to the github `repo` r
 
     file="an_earlier_deleted_file_i_want_to_restore.txt"
     git checkout $(git rev-list -n 1 HEAD -- "$file")^ -- "$file"
+
+## Purging a unneeded file or file with sensitive unforamtion from a repository
+
+    git filter-branch --force --index-filter \
+    'git rm --cached --ignore-unmatch FILENAME' \
+    --prune-empty --tag-name-filter cat -- --all
