@@ -47,5 +47,5 @@ This will create a directory named `lib/repo` and link it to the github `repo` r
 
     FILENAME=""
     git filter-branch --force --index-filter \
-    'git rm --cached --ignore-unmatch $FILENAME' \
+    "git rm --cached --ignore-unmatch $FILENAME" \
     --prune-empty --tag-name-filter cat -- --all
