@@ -1,6 +1,6 @@
 # Best practices in Programming
 
-## Motivation:
+## Motivation (what good practices serve?):
 - Efficient programming
 - Efficient debugging
 - Maintainability and extendability
@@ -8,9 +8,10 @@
 ## Values:
 - Simplicity
 - Readability
-	- Better to have a readable code than heavily commented code, as comments can get outdated.
+  - Better to have a readable code than heavily commented code, as comments can get outdated.
 - Consistency
-- etc
+  - Better to know what to expect than think twice
+  - Use of standards and convenitons 
 
 ## GUI design
 
